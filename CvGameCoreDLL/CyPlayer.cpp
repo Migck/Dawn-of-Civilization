@@ -2717,3 +2717,8 @@ int CyPlayer::getPeriod()
 {
 	return m_pPlayer ? m_pPlayer->getPeriod() : -1;
 }
+
+void CyPlayer::changeGoldPerTurnByPlayer(int iPlayer, int iChange)
+{
+	if (m_pPlayer) m_pPlayer->changeGoldPerTurnByPlayer((PlayerTypes)iPlayer, iChange);
+}

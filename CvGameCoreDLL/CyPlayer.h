@@ -597,6 +597,7 @@ public:
 	void setAlive(bool bNewValue);
 	void setPeriod(int iPeriod);
 	int getPeriod();
+	void changeGoldPerTurnByPlayer(int iPlayer, int iChange);
 
 private:
 	CvPlayer* m_pPlayer;

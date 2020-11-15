@@ -136,5 +136,6 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
 		.def("setAlive", &CyPlayer::setAlive, "void (bool bNewValue)")
 		.def("getPeriod", &CyPlayer::getPeriod, "int ()")
 		.def("setPeriod", &CyPlayer::setPeriod, "void (int iPeriod)")
+		.def("changeGoldPerTurnByPlayer", &CyPlayer::changeGoldPerTurnByPlayer, "void (int iPlayer, int iChange)")
 		;
 }
